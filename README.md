@@ -1,4 +1,4 @@
-# grunt-indent
+# grunt-indent [![Build Status](https://travis-ci.org/stevenbenner/grunt-indent.png)](https://travis-ci.org/stevenbenner/grunt-indent)
 
 > Change the indentation of files.
 
