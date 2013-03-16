@@ -1,0 +1,42 @@
+{
+  "name": "grunt-indent",
+  "description": "Change the indentation of files.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/stevenbenner/grunt-indent",
+  "author": {
+    "name": "Steven Benner",
+    "url": "http://stevenbenner.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stevenbenner/grunt-indent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stevenbenner/grunt-indent/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/stevenbenner/grunt-indent/blob/master/LICENSE.txt"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4",
+    "grunt-contrib-jshint": "~0.3",
+    "grunt-contrib-clean": "~0.4",
+    "grunt-contrib-nodeunit": "~0.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
