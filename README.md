@@ -32,7 +32,7 @@ grunt.initConfig({
       // Target-specific file lists and/or options go here.
     }
   }
-})
+});
 ```
 
 ### Options
@@ -71,7 +71,7 @@ grunt.initConfig({
       change: 1
     }
   }
-})
+});
 ```
 
 #### Decrease Indentation
@@ -88,7 +88,7 @@ grunt.initConfig({
       change: -1
     }
   }
-})
+});
 ```
 
 ## Release History
