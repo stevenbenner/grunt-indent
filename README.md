@@ -20,20 +20,9 @@ grunt.loadNpmTasks('grunt-indent');
 ## The "indent" task
 
 ### Overview
-In your project's Gruntfile, add a section named `indent` to the data object passed into `grunt.initConfig()`.
+This task will let you increase or decrease the indentation of lines within files. It simply walks all of the lines in the specified files, adds or removes indents as you specify in the options, and saves the modified files to the location you want.
 
-```js
-grunt.initConfig({
-  indent: {
-    options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    }
-  }
-});
-```
+This is useful for building JavaScript projects where you want the built/concatenated files to have proper indentation.
 
 ### Options
 
