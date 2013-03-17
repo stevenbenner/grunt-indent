@@ -23,12 +23,10 @@ module.exports = function(grunt) {
 
     // define one indent string
     var indent = '';
-    for (var i = 0; i < options.size; i++) {
-      if (options.style === 'tab') {
-        indent += '\t';
-      } else if (options.style === 'space') {
-        indent += ' ';
-      }
+    if (options.style === 'tab') {
+      indent = grunt.util._.repeat('\t', options.size);
+    } else if (options.style === 'space') {
+      indent = grunt.util._.repeat(' ', options.size);
     }
 
     // process the files
@@ -50,16 +48,13 @@ module.exports = function(grunt) {
         }
 
         // walk the file line-by-line
-        grunt.file.read(src).split('\n').forEach(function(line) {
-          var i;
+        grunt.util._.lines(grunt.file.read(src)).forEach(function(line) {
           if (line) {
             if (options.change > 0) {
-              for (i = 0; i < options.change; i++) {
-                line = indent + line;
-              }
+              line = grunt.util._.repeat(indent, options.change) + line;
             } else if (options.change < 0) {
-              i = options.change;
-              while (line.indexOf(indent) === 0 && i < 0) {
+              var i = options.change;
+              while (grunt.util._.startsWith(line, indent) && i < 0) {
                 line = line.substring(options.size);
                 i++;
               }
