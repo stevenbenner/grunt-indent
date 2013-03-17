@@ -12,7 +12,7 @@ var path = require('path');
 
 module.exports = function(grunt) {
 
-  grunt.registerMultiTask('indent', 'Adjust the indentation of files.', function() {
+  grunt.registerMultiTask('indent', 'Change the indentation of files.', function() {
 
     // get options object with defaults
     var options = this.options({
