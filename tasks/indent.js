@@ -41,8 +41,13 @@ module.exports = function(grunt) {
         }
         return true;
       }).forEach(function(src) {
-        var dest = file.dest + path.basename(src),
+        var dest = file.dest,
           newFile = [];
+
+        // if dest is a folder  use the src file name
+        if (grunt.util._.endsWith(dest, '/')) {
+          dest += path.basename(src);
+        }
 
         // walk the file line-by-line
         grunt.file.read(src).split('\n').forEach(function(line) {
