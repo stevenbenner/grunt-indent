@@ -42,6 +42,15 @@ module.exports = function(grunt) {
           size: 2,
           change: -2
         }
+      },
+      jsfile: {
+        src: 'test/fixtures/test.js',
+        dest: 'tmp/test.js',
+        options: {
+          style: 'space',
+          size: 2,
+          change: 2
+        }
       }
     },
     nodeunit: {

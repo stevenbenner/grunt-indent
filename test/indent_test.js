@@ -30,6 +30,17 @@ exports.indent = {
     test.equal(actualCss, expectedCss, 'css file indent correctly decreased');
 
     test.done();
+  },
+
+  jsfile: function(test) {
+    var actualJs = grunt.file.read('tmp/test.js'),
+      expectedJs = grunt.file.read('test/expected/test.js');
+
+    test.expect(1);
+
+    test.equal(actualJs, expectedJs, 'js file indent correctly increased');
+
+    test.done();
   }
 
 };
