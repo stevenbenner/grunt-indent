@@ -81,5 +81,6 @@ grunt.initConfig({
 ```
 
 ## Release History
+ * 2013-03-21   v0.1.2   Fixed bug with empty lines when file uses Windows style line endings.
  * 2013-03-17   v0.1.1   Added support for single-file destinations.
  * 2013-03-16   v0.1.0   Initial release.
