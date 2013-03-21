@@ -48,7 +48,7 @@ module.exports = function(grunt) {
         }
 
         // walk the file line-by-line
-        grunt.util._.lines(grunt.file.read(src)).forEach(function(line) {
+        grunt.file.read(src).split(/\r\n?|\n/).forEach(function(line) {
           if (line) {
             if (options.change > 0) {
               line = grunt.util._.repeat(indent, options.change) + line;
