@@ -63,7 +63,7 @@ module.exports = function(grunt) {
           newFile.push(line);
         });
 
-        grunt.file.write(dest, newFile.join('\n'));
+        grunt.file.write(dest, newFile.join(grunt.util.linefeed));
       });
     });
 
