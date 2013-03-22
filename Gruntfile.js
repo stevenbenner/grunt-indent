@@ -58,6 +58,9 @@ module.exports = function(grunt) {
     }
   });
 
+  // force unix style line endings in windows environments
+  grunt.util.linefeed = '\n';
+
   grunt.loadTasks('tasks');
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
