@@ -2,13 +2,17 @@
 
 var grunt = require('grunt');
 
+function getNormalizedFile(filePath) {
+  return grunt.util.normalizelf(grunt.file.read(filePath));
+}
+
 exports.indent = {
 
   increase: function(test) {
-    var actualJs = grunt.file.read('tmp/increase/test.js'),
-      actualCss = grunt.file.read('tmp/increase/test.css'),
-      expectedJs = grunt.file.read('test/expected/increase/test.js'),
-      expectedCss = grunt.file.read('test/expected/increase/test.css');
+    var actualJs = getNormalizedFile('tmp/increase/test.js'),
+      actualCss = getNormalizedFile('tmp/increase/test.css'),
+      expectedJs = getNormalizedFile('test/expected/increase/test.js'),
+      expectedCss = getNormalizedFile('test/expected/increase/test.css');
 
     test.expect(2);
 
@@ -19,10 +23,10 @@ exports.indent = {
   },
 
   decrease: function(test) {
-    var actualJs = grunt.file.read('tmp/decrease/test.js'),
-      actualCss = grunt.file.read('tmp/decrease/test.css'),
-      expectedJs = grunt.file.read('test/expected/decrease/test.js'),
-      expectedCss = grunt.file.read('test/expected/decrease/test.css');
+    var actualJs = getNormalizedFile('tmp/decrease/test.js'),
+      actualCss = getNormalizedFile('tmp/decrease/test.css'),
+      expectedJs = getNormalizedFile('test/expected/decrease/test.js'),
+      expectedCss = getNormalizedFile('test/expected/decrease/test.css');
 
     test.expect(2);
 
@@ -33,8 +37,8 @@ exports.indent = {
   },
 
   jsfile: function(test) {
-    var actualJs = grunt.file.read('tmp/test.js'),
-      expectedJs = grunt.file.read('test/expected/test.js');
+    var actualJs = getNormalizedFile('tmp/test.js'),
+      expectedJs = getNormalizedFile('test/expected/test.js');
 
     test.expect(1);
 
