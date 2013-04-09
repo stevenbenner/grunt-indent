@@ -1,0 +1,8 @@
+test
+tmp
+.editorconfig
+.gitattributes
+.gitignore
+.jshintrc
+.travis.yml
+Gruntfile.js
