@@ -17,6 +17,5 @@
   "unused": true,
   "strict": true,
   "trailing": true,
-  "es5": true,
   "node": true
 }
