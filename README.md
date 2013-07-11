@@ -1,6 +1,8 @@
-# grunt-indent [![Build Status](https://travis-ci.org/stevenbenner/grunt-indent.png)](https://travis-ci.org/stevenbenner/grunt-indent)
+# grunt-indent
 
-> Change the indentation of files.
+A grunt task to change the indentation of files.
+
+[![Build Status](https://travis-ci.org/stevenbenner/grunt-indent.png)](https://travis-ci.org/stevenbenner/grunt-indent)
 
 ## Getting Started
 This plugin requires Grunt `~0.4.0`
