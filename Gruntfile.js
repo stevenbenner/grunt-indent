@@ -25,8 +25,8 @@ module.exports = function(grunt) {
       tests: ['tmp'],
     },
     indent: {
-      increase: {
-        src: ['test/fixtures/*.js', 'test/fixtures/*.css'],
+      increaseWithSpaces: {
+        src: ['test/fixtures/*.spaces.js', 'test/fixtures/*.spaces.css'],
         dest: 'tmp/increase/',
         options: {
           style: 'space',
@@ -34,8 +34,8 @@ module.exports = function(grunt) {
           change: 1
         }
       },
-      decrease: {
-        src: ['test/fixtures/*.js', 'test/fixtures/*.css'],
+      decreaseWithSpaces: {
+        src: ['test/fixtures/*.spaces.js', 'test/fixtures/*.spaces.css'],
         dest: 'tmp/decrease/',
         options: {
           style: 'space',
@@ -43,8 +43,26 @@ module.exports = function(grunt) {
           change: -2
         }
       },
+      increaseWithTabs: {
+        src: ['test/fixtures/*.tabs.js', 'test/fixtures/*.tabs.css'],
+        dest: 'tmp/increase/',
+        options: {
+          style: 'tab',
+          size: 1,
+          change: 1
+        }
+      },
+      decreaseWithTabs: {
+        src: ['test/fixtures/*.tabs.js', 'test/fixtures/*.tabs.css'],
+        dest: 'tmp/decrease/',
+        options: {
+          style: 'tab',
+          size: 1,
+          change: -1
+        }
+      },
       jsfile: {
-        src: 'test/fixtures/test.js',
+        src: 'test/fixtures/test.spaces.js',
         dest: 'tmp/test.js',
         options: {
           style: 'space',
