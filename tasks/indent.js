@@ -64,6 +64,7 @@ module.exports = function(grunt) {
         });
 
         grunt.file.write(dest, newFile.join(grunt.util.linefeed));
+        grunt.log.writeln('File "' + dest + '" saved.');
       });
     });
 
