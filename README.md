@@ -54,12 +54,16 @@ In this example the indent task will increase the indent of all .js files in the
 ```js
 grunt.initConfig({
   indent: {
-    src: ['src/*.js'],
-    dest: 'dist/',
-    options: {
-      style: 'space',
-      size: 2,
-      change: 1
+    scripts: {
+      src: [
+        'src/*.js'
+      ],
+      dest: 'dist/',
+      options: {
+        style: 'space',
+        size: 2,
+        change: 1
+      }
     }
   }
 });
@@ -71,12 +75,16 @@ In this example the indent task will decrease the indent of all .css files in th
 ```js
 grunt.initConfig({
   indent: {
-    src: ['css/*.css'],
-    dest: 'dist/',
-    options: {
-      style: 'space',
-      size: 2,
-      change: -1
+    stylesheets: {
+      src: [
+        'css/*.css'
+      ],
+      dest: 'dist/',
+      options: {
+        style: 'space',
+        size: 2,
+        change: -1
+      }
     }
   }
 });
