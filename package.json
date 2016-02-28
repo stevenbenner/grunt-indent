@@ -14,12 +14,7 @@
   "bugs": {
     "url": "https://github.com/stevenbenner/grunt-indent/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://raw.github.com/stevenbenner/grunt-indent/master/LICENSE.txt"
-    }
-  ],
+  "license":  "MIT",
   "main": "Gruntfile.js",
   "engines": {
     "node": ">= 0.8.0"
