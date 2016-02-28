@@ -2,7 +2,7 @@
  * grunt-indent
  * https://github.com/stevenbenner/grunt-indent
  *
- * Copyright (c) 2013 Steven Benner
+ * Copyright (c) 2016 Steven Benner
  * Licensed under the MIT license.
  */
 
