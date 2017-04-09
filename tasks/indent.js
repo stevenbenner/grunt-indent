@@ -42,7 +42,7 @@ module.exports = function(grunt) {
         var dest = file.dest,
           newFile = [];
 
-        // if dest is a folder  use the src file name
+        // if dest is a folder use the src file name
         if (grunt.util._.endsWith(dest, '/')) {
           dest += path.basename(src);
         }
