@@ -23,10 +23,10 @@
     "test": "grunt test --verbose"
   },
   "devDependencies": {
-    "grunt": "~0.4",
-    "grunt-contrib-jshint": "~1.0",
+    "grunt": "~1.0",
+    "grunt-contrib-jshint": "~1.1",
     "grunt-contrib-clean": "~1.0",
-    "grunt-contrib-nodeunit": "~0.4"
+    "grunt-contrib-nodeunit": "~1.0"
   },
   "peerDependencies": {
     "grunt": ">=0.4.0"
