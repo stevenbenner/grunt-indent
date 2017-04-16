@@ -3,5 +3,6 @@ tmp/
 .editorconfig
 .gitattributes
 .jshintrc
+.npmignore
 .travis.yml
 Gruntfile.js
