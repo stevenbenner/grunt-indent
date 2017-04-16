@@ -1,5 +1,5 @@
-test
-tmp
+test/
+tmp/
 .editorconfig
 .gitattributes
 .jshintrc
