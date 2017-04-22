@@ -15,7 +15,7 @@
     "url": "https://github.com/stevenbenner/grunt-indent/issues"
   },
   "license":  "MIT",
-  "main": "Gruntfile.js",
+  "main": "tasks/indent.js",
   "engines": {
     "node": ">= 0.10.0"
   },
