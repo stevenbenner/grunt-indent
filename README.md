@@ -91,6 +91,7 @@ grunt.initConfig({
 ```
 
 ## Release History
+ * 2017-04-22   v1.0.0   Increase min Node.js version to 0.10. Corrected "main" target.
  * 2016-02-28   v0.1.5   Updated grunt peer dependency to support Grunt v1.0.
  * 2013-11-08   v0.1.4   Added success message to grunt output.
  * 2013-03-23   v0.1.3   Files will now be saved with Grunt defined line endings.
